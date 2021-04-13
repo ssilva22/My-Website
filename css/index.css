@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Responsive Design
+Why is the viewport meta-tag so important?It allows ur browser to read our
+media queries
+We write our media queries at the bottom of our CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    max-width: 100%;
+    border:1px solid grey;
+}
+
+/*General Styles*/
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    line-height:1.5;
+    background-color: #fbfffb;
+    color: #4f4f4f;
+
+}
+body{
+    background-color: #14213d ;
+}
+footer{
+    background-color:#2a9d8f ;
+}
+a{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color:#fff;
+}
+h1,h2,h3{
+    font-family: 'Oxygen', sans-serif;
+    text-align:center;
+    color:#266035
+}
+h1{
+    color:#fbfffb;
+    font-size: 6rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+section{
+    padding:4% 0;
+}
+/*Header Section Styles*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    color:rgba(255,255,255,0.8);
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+    top:0;
+}
+.logo{
+    background-color: #2a9d8f;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    background-color: #2a9d8f;
+}
+nav{
+    background-color: #2a9d8f;
+}
+.logo img{
+    width: 40%;
+}
+.links{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*Top Section Styles*/
+.introduction{
+    margin: 6% 2%;
+    width: 30em;
+    padding: 1%;
+    background-color: #fbfffb;
+    border-radius: 3%;
+    border-right:12px solid orange ;
+    border-bottom: 9px solid orange ;
+    margin-left: 12%;
+  
+}
+#header{
+    font-size: 2em;
+    color:#14213d;
+    font-weight: 400;
+}
+#texting{
+    font-weight: 400;
+    font-style:oblique;
+    color:#14213d;
+    font-size: 18px;
+}
+#texting1{
+    font-weight: bold;
+    color: #14213d;
+    font-size: 18px;
+}
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:1em;
+    margin-left:2.5em;
+    margin-bottom:-600px;
+  
+}
+#home{
+    
+    height: 80vh;
+    background-image: url('../images/header.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.first{
+    display: flex;
+}
+.first{
+    margin: 5% 0;
+    margin-top: 6%;
+}
+.image img{
+    width:100%;
+    border-radius: 100%;
+}
+.image{
+    margin-left: 8%;
+}
+/*About Section Styles*/
+
+#about{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('../images/about-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 12% 0;
+}
+#about div{
+    width: 100%;
+    margin-right: 10%;
+    padding:4%;
+}
+.About-me{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding:0 8%;
+    text-align: center;
+    text-indent: 2px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+#about-h2{
+    color:#fff;
+    font-size: 24px;
+    margin-left:-2em;
+}
+#about-h1{
+margin-left: 7em;
+margin-top: -8.5rem;
+text-decoration: underline  8.5px dotted orange;
+}
+#about p{
+    width: 100%;
+    margin-left:12%;
+    margin-top: 1.5em;
+    padding:1%;
+}
+
+/*Shop Section Style*/
+.container{
+    display: flex;
+}
+.shopText{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopText div{
+    width: 60%;
+    text-align: center;
+}
+.bg-img{
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.succulants{
+    background-image: url('../images/succulants.jpg');
+}
+.cacti{
+    background-image: url('../images/cacti.jpg');
+}
+.tropicals{
+    background-image: url('../images/tropicals.jpg');
+}
+
+/*Footer*/
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    color: #fbfffb;
+    background-color:#266035 ;
+}
+h2{
+    width: 100%;
+}
+#contact p.copyright{
+    width: 100%;
+    text-align: right;
+    margin-right: 10%;
+}
+#contact h2{
+    background-color: #fbfffb;
+}
+.left, .right{
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.right img{
+    width: 50%;
+}
+.left div{
+    width: 40%;
+    text-align: left;
+    line-height: 2;
+}
+#contact h3{
+    color: #fbfffb;
+
+}
+#contact a{
+    color: #fbfffb;
+}
+/*Responsive Styles*/
+/*Breakpoints*/
+/*Tablet*/
+/*Difference between max-width and min-widht
+
+-max-width scales down,this is for desktop first design
+
+-min-width scales up, this is for mobile first design*/
+@media(max-width:800px){
+    #about div{
+        width: 40%;
+    }
+    .shopText div{
+        width: 70%;
+    }
+}
+/*Phone*/
+@media(max-width:500px){
+nav{
+    flex-direction: column;
+    align-items: center;
+}
+.link{
+    width: 100%;
+}
+.logo{
+    width: 25%;
+}
+#home button{
+    display: none;
+}
+#about{
+    background-image: none;
+    background-color: #e2e3e5;
+    justify-content: center;
+}
+#about div{
+    margin-right: 0;
+    width: 80%;
+}
+.container{
+    flex-direction: column;
+    align-items: center;
+}
+.bg-img, .shopText{
+    width: 90%;
+}
+.mobileSpecific{
+    flex-direction: column-reverse;
+
+}
+.shopText div{
+    width: 100%;
+}
+
+    .left, .right{
+        width: 100%;
+    }
+    #contact p{
+        text-align: center;
+        margin: 0;
+    }
+    .left div{
+        width: 50%;
+    }
+}
+
