@@ -101,6 +101,7 @@ section{
 }
 /*Header Section Styles*/
 nav{
+    padding:1em;
     display: flex;
     justify-content: space-between;
     color:rgba(255,255,255,0.8);
@@ -110,11 +111,19 @@ nav{
     top:0;
 }
 .logo{
-    background-color: #2a9d8f;
-    width: 30%;
+    border-radius: 50%;
+    background: rgb(244,3,3);
+    background: linear-gradient(31deg, rgba(244,3,3,1) 27%, rgba(98,67,205,1) 27%, rgba(98,67,205,1) 54%, rgba(149,134,199,1) 54%, rgba(8,127,254,1) 82%, rgba(98,67,205,1) 82%, rgba(255,255,255,1) 100%, rgba(8,127,254,1) 100%, rgba(135,134,238,1) 100%);
+    width: 11%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+.logo h1{
+    font-weight: 400;
+    font-family: 'Lobster', cursive;
+    padding:1%;
 }
 .links{
     background-color: #2a9d8f;
@@ -435,17 +444,7 @@ nav{
     padding:0 5%;
     border-bottom:4px dotted darkorange;
 }
-.myportfolio:before{
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: -2em;
-    margin-left: 66rem;
 
-}
 
 .myportfolio:after{
     display: block;
@@ -454,10 +453,15 @@ nav{
     content: " ";
     width: 100px;
     margin: 0 auto;
-    margin-top: 0;
+    margin-top: -38em;
     margin-bottom: 7.5%;
 }
-
+footer{
+    margin-top: -2.9em;
+}
+footer p{
+    padding-top:3%;
+}
 /**************************************************************/
 
 
@@ -521,7 +525,7 @@ footer .social-links{
   animation: scroll 70s linear infinite;
   background: url("https://images.unsplash.com/photo-1615638728221-e4380fd2962e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxODMyOTA5NA&ixlib=rb-1.2.1&q=85"), #111111;
   color: #eee;
-  height: 50vh;
+  height: 60vh;
   min-width: 360px;
   width: 100%;
   display: flex;
@@ -531,7 +535,12 @@ footer .social-links{
   perspective-origin: 50% 50%;
   
 }
-
+.wrapper{
+    margin-top: 3em;
+}
+footer .social-links{
+    margin-left: 26.5em;
+}
 @keyframes scroll {
    100%{
     background-position:0px -3000px;
@@ -550,3 +559,7 @@ footer .social-links{
     font-family: 'Source Sans Pro', sans-serif;
   }
 }
+/***************ABOUT-SECTION***********************************/
+/**************************************************************/
+/*************************************************************/
+
